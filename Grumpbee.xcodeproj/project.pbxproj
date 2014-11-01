@@ -15,6 +15,9 @@
 		4F3ACABF1A056F7800A8CA05 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3ACABE1A056F7800A8CA05 /* DropboxSDK.framework */; };
 		4F3ACAC11A056F8800A8CA05 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3ACAC01A056F8800A8CA05 /* Security.framework */; };
 		4F3ACAC31A056F9A00A8CA05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3ACAC21A056F9A00A8CA05 /* QuartzCore.framework */; };
+		4FDD55F01A057C4D006435BA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD55EF1A057C4D006435BA /* ShareViewController.swift */; };
+		4FDD55F21A057C4D006435BA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDD55F11A057C4D006435BA /* MainInterface.storyboard */; };
+		4FDD55F51A057C4D006435BA /* GrumpbeeShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4FDD55EB1A057C4D006435BA /* GrumpbeeShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +28,35 @@
 			remoteGlobalIDString = 4F3ACA941A056DE900A8CA05;
 			remoteInfo = Grumpbee;
 		};
+		4FDD55F31A057C4D006435BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F3ACA8D1A056DE900A8CA05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDD55EA1A057C4D006435BA;
+			remoteInfo = GrumpbeeShare;
+		};
+		4FDD55F61A057C4D006435BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F3ACA8D1A056DE900A8CA05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDD55EA1A057C4D006435BA;
+			remoteInfo = GrumpbeeShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4FDD55FB1A057C4D006435BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4FDD55F51A057C4D006435BA /* GrumpbeeShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4F3ACA951A056DE900A8CA05 /* Grumpbee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grumpbee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +72,10 @@
 		4F3ACAC01A056F8800A8CA05 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4F3ACAC21A056F9A00A8CA05 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4F3ACAC51A0570AB00A8CA05 /* Grumpbee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grumpbee-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FDD55EB1A057C4D006435BA /* GrumpbeeShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrumpbeeShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDD55EE1A057C4D006435BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDD55EF1A057C4D006435BA /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		4FDD55F11A057C4D006435BA /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FDD55E81A057C4D006435BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +111,7 @@
 			children = (
 				4F3ACA971A056DE900A8CA05 /* Grumpbee */,
 				4F3ACAAD1A056DE900A8CA05 /* GrumpbeeTests */,
+				4FDD55EC1A057C4D006435BA /* GrumpbeeShare */,
 				4F3ACA961A056DE900A8CA05 /* Products */,
 				4F3ACAC41A056FA300A8CA05 /* Frameworks */,
 			);
@@ -79,6 +122,7 @@
 			children = (
 				4F3ACA951A056DE900A8CA05 /* Grumpbee.app */,
 				4F3ACAAA1A056DE900A8CA05 /* GrumpbeeTests.xctest */,
+				4FDD55EB1A057C4D006435BA /* GrumpbeeShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +175,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4FDD55EC1A057C4D006435BA /* GrumpbeeShare */ = {
+			isa = PBXGroup;
+			children = (
+				4FDD55EF1A057C4D006435BA /* ShareViewController.swift */,
+				4FDD55F11A057C4D006435BA /* MainInterface.storyboard */,
+				4FDD55ED1A057C4D006435BA /* Supporting Files */,
+			);
+			path = GrumpbeeShare;
+			sourceTree = "<group>";
+		};
+		4FDD55ED1A057C4D006435BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FDD55EE1A057C4D006435BA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +203,13 @@
 				4F3ACA911A056DE900A8CA05 /* Sources */,
 				4F3ACA921A056DE900A8CA05 /* Frameworks */,
 				4F3ACA931A056DE900A8CA05 /* Resources */,
+				4FDD55FB1A057C4D006435BA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4FDD55F41A057C4D006435BA /* PBXTargetDependency */,
+				4FDD55F71A057C4D006435BA /* PBXTargetDependency */,
 			);
 			name = Grumpbee;
 			productName = Grumpbee;
@@ -169,6 +234,23 @@
 			productReference = 4F3ACAAA1A056DE900A8CA05 /* GrumpbeeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4FDD55EA1A057C4D006435BA /* GrumpbeeShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FDD55FA1A057C4D006435BA /* Build configuration list for PBXNativeTarget "GrumpbeeShare" */;
+			buildPhases = (
+				4FDD55E71A057C4D006435BA /* Sources */,
+				4FDD55E81A057C4D006435BA /* Frameworks */,
+				4FDD55E91A057C4D006435BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrumpbeeShare;
+			productName = GrumpbeeShare;
+			productReference = 4FDD55EB1A057C4D006435BA /* GrumpbeeShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +266,9 @@
 					4F3ACAA91A056DE900A8CA05 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 4F3ACA941A056DE900A8CA05;
+					};
+					4FDD55EA1A057C4D006435BA = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -202,6 +287,7 @@
 			targets = (
 				4F3ACA941A056DE900A8CA05 /* Grumpbee */,
 				4F3ACAA91A056DE900A8CA05 /* GrumpbeeTests */,
+				4FDD55EA1A057C4D006435BA /* GrumpbeeShare */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +306,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDD55E91A057C4D006435BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDD55F21A057C4D006435BA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +337,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FDD55E71A057C4D006435BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDD55F01A057C4D006435BA /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -250,6 +352,16 @@
 			isa = PBXTargetDependency;
 			target = 4F3ACA941A056DE900A8CA05 /* Grumpbee */;
 			targetProxy = 4F3ACAAB1A056DE900A8CA05 /* PBXContainerItemProxy */;
+		};
+		4FDD55F41A057C4D006435BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDD55EA1A057C4D006435BA /* GrumpbeeShare */;
+			targetProxy = 4FDD55F31A057C4D006435BA /* PBXContainerItemProxy */;
+		};
+		4FDD55F71A057C4D006435BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDD55EA1A057C4D006435BA /* GrumpbeeShare */;
+			targetProxy = 4FDD55F61A057C4D006435BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,6 +512,30 @@
 			};
 			name = Release;
 		};
+		4FDD55F81A057C4D006435BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GrumpbeeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4FDD55F91A057C4D006435BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GrumpbeeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -419,12 +555,22 @@
 				4F3ACAB61A056DE900A8CA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F3ACAB71A056DE900A8CA05 /* Build configuration list for PBXNativeTarget "GrumpbeeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F3ACAB81A056DE900A8CA05 /* Debug */,
 				4F3ACAB91A056DE900A8CA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FDD55FA1A057C4D006435BA /* Build configuration list for PBXNativeTarget "GrumpbeeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDD55F81A057C4D006435BA /* Debug */,
+				4FDD55F91A057C4D006435BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
