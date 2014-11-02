@@ -269,6 +269,7 @@
 					};
 					4FDD55EA1A057C4D006435BA = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = ZSRA92R6A3;
 					};
 				};
 			};
@@ -573,6 +574,7 @@
 				4FDD55F91A057C4D006435BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
